@@ -5,9 +5,9 @@ import org.springframework.batch.item.ItemProcessor;
 
 public class CustomItemProcessor implements ItemProcessor<Transaction, Transaction> {
 
-    @Override
-    public Transaction process(Transaction item) {
-        System.out.println("Processing..." + item);
-        return item;
-    }
+  @Override
+  public Transaction process(Transaction item) {
+    System.out.println("Processing..." + item);
+    return item;
+  }
 }
