@@ -2,10 +2,10 @@
  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
  <modelVersion>4.0.0</modelVersion>
 
- <groupId>com.baeldung</groupId>
+ <groupId>com.ymmihw.spring</groupId>
  <artifactId>spring-batch</artifactId>
  <version>0.1-SNAPSHOT</version>
- <packaging>jar</packaging>
+ <packaging>pom</packaging>
 
  <name>spring-batch</name>
  <url>http://maven.apache.org</url>
@@ -32,4 +32,7 @@
    <artifactId>sqlite-jdbc</artifactId>
   </dependency>
  </dependencies>
+ <modules>
+  <module>spring-batch-partitioner</module>
+ </modules>
 </project>

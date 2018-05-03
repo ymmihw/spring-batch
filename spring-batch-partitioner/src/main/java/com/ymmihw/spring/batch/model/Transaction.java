@@ -1,4 +1,4 @@
-package org.baeldung.batch.model;
+package com.ymmihw.spring.batch.model;
 
 import java.util.Date;
 import javax.xml.bind.annotation.XmlRootElement;

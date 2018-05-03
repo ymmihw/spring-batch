@@ -1,11 +1,11 @@
-package org.baeldung.batch.service;
+package com.ymmihw.spring.batch.service;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import org.baeldung.batch.model.Transaction;
 import org.springframework.batch.item.file.mapping.FieldSetMapper;
 import org.springframework.batch.item.file.transform.FieldSet;
 import org.springframework.validation.BindException;
+import com.ymmihw.spring.batch.model.Transaction;
 
 public class RecordFieldSetMapper implements FieldSetMapper<Transaction> {
 
