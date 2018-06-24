@@ -10,9 +10,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import com.ymmihw.spring.batch.config.TaskletsConfig;
+import com.ymmihw.spring.batch.config.TestConfig;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = TaskletsConfig.class)
+@ContextConfiguration(classes = {TaskletsConfig.class, TestConfig.class})
 public class TaskletsIntegrationTest {
 
   @Autowired

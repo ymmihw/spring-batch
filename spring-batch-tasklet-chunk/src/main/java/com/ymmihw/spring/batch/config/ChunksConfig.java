@@ -13,7 +13,6 @@ import org.springframework.batch.item.ItemProcessor;
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.batch.support.transaction.ResourcelessTransactionManager;
-import org.springframework.batch.test.JobLauncherTestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -33,10 +32,7 @@ public class ChunksConfig {
   @Autowired
   private StepBuilderFactory steps;
 
-  @Bean
-  public JobLauncherTestUtils jobLauncherTestUtils() {
-    return new JobLauncherTestUtils();
-  }
+
 
   @Bean
   public JobRepository jobRepository() throws Exception {

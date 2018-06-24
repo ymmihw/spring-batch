@@ -10,7 +10,6 @@ import org.springframework.batch.core.launch.support.SimpleJobLauncher;
 import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.batch.core.repository.support.MapJobRepositoryFactoryBean;
 import org.springframework.batch.support.transaction.ResourcelessTransactionManager;
-import org.springframework.batch.test.JobLauncherTestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -28,11 +27,6 @@ public class TaskletsConfig {
 
   @Autowired
   private StepBuilderFactory steps;
-
-  @Bean
-  public JobLauncherTestUtils jobLauncherTestUtils() {
-    return new JobLauncherTestUtils();
-  }
 
   @Bean
   public JobRepository jobRepository() throws Exception {
